@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-image: url(kirito_wallpaper_by_hatoka_d9v2v0j-fullview.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+.logo2{
+    background-color: orange;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper li{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.wrapper li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper li a:hover{
+    color: gold;
+}
+.wrapper li a::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+}
+.wrapper li a:hover::after{
+    transform: scaleX(0.5);
+    transition: 0.3s;
+}
+.drop{
+    display: block;
+    position: absolute;
+    margin: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    right: 40px;
+}
+li:hover .drop{
+    transform: scaleX(1);
+    transition: 0.3s;
+}
+video{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+footer{
+    width: 100%;
+}
+footer div{
+    background-color: black;
+    height: 100px;
+}
+footer div h1{
+    text-align: center;
+}
